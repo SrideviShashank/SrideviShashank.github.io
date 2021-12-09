@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <header>
+
+    <a href="#" class="logo"><img src="images/logo1.jpg" alt="logo" style="width: auto;height: 40px;"></i>Vegresto.</a>
+    
+    
+
+
+    <nav class="navbar">
+        <a  href="bootstrap.html">home</a>
+        <a  href="bootstrap.html">about</a>
+        <a  class="active" href="index.html">menu</a>
+        <a href="index.html">review</a>
+        
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#menu" class="fas fa-heart"></a>
+        <a href="form.html" class="fas fa-portrait"></a>
+    </div>
+
+</header>
+    
+  <div class="containerForm">
+      
+    <div class="item">
+        <form>
+            <h1 class="login">Login</h1>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="email">Email address</label>
+              <input type="email" id="email" class="form-control" placeholder="email"  value="eve.holt@reqres.in"/>
+              
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                 <label class="form-label" for="password">Password</label>
+              <input type="password" id="password" class="form-control" placeholder="password" value="cityslicka" />
+             
+            </div>
+          
+            <!-- Submit button -->
+            <input type="button" value="Signin" class="btn btn-primary btn-block mb-4" onclick="postData()">
+            <div id="message"></div>
+          
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Not a member? <a href="#Register">Register</a></p>
+              <p>or sign up with:</p>
+              
+              <button type="button" class="btn btn-primary btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+          
+              <button type="button" class="btn btn-primary btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+          
+              <button type="button" class="btn btn-primary btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+             
+            </div>
+          </form>
+
+    </div>
+  
+    <div class="item">
+        <form>
+            <h1 class="Register">Register</h1>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            
+              
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="Firstname">First Name </label>
+                  <input type="text" id="Firstname" class="form-control" placeholder="First name" required />
+                  
+                </div>
+             
+              
+                <div class="form-outline">
+                    <label class="form-label" for="Lastname">Last name </label>
+                  <input type="text" id="Lastname" class="form-control" placeholder="Last name" />
+                </div>
+            
+            
+          
+            
+          
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="Address">Enter your Address </label>
+              <input type="text" id="Address" class="form-control" placeholder="Address"/>
+              
+            </div>
+          
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="email">Enter your Email </label>
+                
+              <input type="email" id="email" class="form-control" placeholder="email" required/>
+              
+            </div>
+          
+            <!-- Number input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="ContactNumber">Contact Number </label>
+              <input type="number" id="ContactNumber" class="form-control" placeholder="Contact Number" required/>
+              
+            </div>
+          
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="Message">Additional information </label>
+              <textarea class="form-control" id="Message"  rows="4" placeholder="Additional information"></textarea>
+              
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value=""
+                id="form6Example8"/>
+              <label class="form-check-label" for="form6Example8"> Create an account? </label>
+            </div>
+          
+            <!-- Submit button -->
+            
+            <input type="submit" value="Create Account" class="btn btn-primary btn-block mb-4" onclick="orDernow()"><p id="demo"></p>
+          </form>
+    </div>
+    
+</div>
+
+    <!-- custom js file link  -->
+<script src="js/form.js"></script>
+</body>
+</html>

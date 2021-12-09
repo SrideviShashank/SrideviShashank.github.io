@@ -1,0 +1,46 @@
+.navbar-header .logo{
+    color: #fff;;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+
+ .content span{
+  
+    font-size: 3rem;
+}
+.content span h2{
+    text-align: center;
+    color:white;
+  font-size: 3rem;
+  
+
+}
+
+
+
+  
+
+
+ .content h3{
+    
+    font-size: 5rem;
+}
+
+
+
+ h1{
+    
+    font-size: 4rem;
+}
+
+.active {
+  background-color:wheat;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
