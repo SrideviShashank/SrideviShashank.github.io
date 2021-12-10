@@ -7,7 +7,7 @@
     <title>Profile </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -22,20 +22,24 @@
 
     <nav class="navbar">
         <a  href="bootstrap.html">home</a>
-        <a  href="bootstrap.html">about</a>
+        <a  href="bootstrap.html#about">about</a>
         <a  class="active" href="index.html">menu</a>
-        <a href="index.html">review</a>
+        <a href="review.html">review</a>
         
     </nav>
 
     <div class="icons">
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
-        <a href="#menu" class="fas fa-heart"></a>
         <a href="form.html" class="fas fa-portrait"></a>
     </div>
 
 </header>
+<form action="" id="search-form">
+  <input type="search" placeholder="search here..." name="" id="search-box">
+  <label for="search-box" class="fas fa-search"></label>
+  <i class="fas fa-times" id="close"></i>
+</form>
     
   <div class="containerForm">
       
@@ -153,5 +157,6 @@
 
     <!-- custom js file link  -->
 <script src="js/form.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
