@@ -49,14 +49,14 @@
             <!-- Email input -->
             <div class="form-outline mb-4">
                 <label class="form-label" for="email">Email address</label>
-              <input type="email" id="email" class="form-control" placeholder="email"  value="eve.holt@reqres.in"/>
+              <input type="email" id="email" class="form-control" placeholder="email"  value="eve.holt@reqres.in">
               
             </div>
           
             <!-- Password input -->
             <div class="form-outline mb-4">
                  <label class="form-label" for="password">Password</label>
-              <input type="password" id="password" class="form-control" placeholder="password" value="cityslicka" />
+              <input type="password" id="password" class="form-control" placeholder="password" value="cityslicka" >
              
             </div>
           
@@ -87,14 +87,15 @@
     </div>
   
     <div class="item">
-        <form>
+        <form id="form">
             <h1 class="Register">Register</h1>
             <!-- 2 column grid layout with text inputs for the first and last names -->
             
               
                 <div class="form-outline mb-4">
                     <label class="form-label" for="Firstname">First Name </label>
-                  <input type="text" id="Firstname" class="form-control" placeholder="First name" required />
+                  <input type="text" id="Firstname" class="form-control" placeholder="First name"  />
+                  <div class="error"></div>
                   
                 </div>
              
@@ -102,6 +103,7 @@
                 <div class="form-outline">
                     <label class="form-label" for="Lastname">Last name </label>
                   <input type="text" id="Lastname" class="form-control" placeholder="Last name" />
+                  <div class="error"></div>
                 </div>
             
             
@@ -119,15 +121,16 @@
             <div class="form-outline mb-4">
                 <label class="form-label" for="email">Enter your Email </label>
                 
-              <input type="email" id="email" class="form-control" placeholder="email" required/>
+              <input type="email" id="emailAddress" class="form-control" placeholder="email" />
+              <div class="error"></div>
               
             </div>
           
             <!-- Number input -->
             <div class="form-outline mb-4">
                 <label class="form-label" for="ContactNumber">Contact Number </label>
-              <input type="number" id="ContactNumber" class="form-control" placeholder="Contact Number" required/>
-              
+              <input type="number" id="ContactNumber" class="form-control" placeholder="Contact Number" />
+              <div class="error"></div>
             </div>
           
             <!-- Message input -->
@@ -149,11 +152,25 @@
           
             <!-- Submit button -->
             
-            <input type="submit" value="Create Account" class="btn btn-primary btn-block mb-4" onclick="orDernow()"><p id="demo"></p>
+            <button type="submit" value="" class="btn btn-primary btn-block mb-4" >Create Account</button>
           </form>
     </div>
     
 </div>
+
+
+
+
+<!-- loader part  -->
+<div class="loader-container">
+  <img src="images/loader.gif" alt="">
+</div>
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
 <script src="js/form.js"></script>
